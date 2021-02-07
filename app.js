@@ -16,7 +16,7 @@ app.use(bodyparser.json())
 //         res.send(docs)
 //       });
 
-   app.send('hi')
+   res.send('hi')
     
 })
 
