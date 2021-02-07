@@ -15,6 +15,7 @@ app.use(bodyparser.json())
 //         if (err) return console.error(err);
 //         res.send(docs)
 //       });
+
    app.send('hi')
     
 })
