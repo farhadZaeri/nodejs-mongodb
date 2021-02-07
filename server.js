@@ -6,15 +6,15 @@ const app = express()
 
 app.use(bodyparser.json())
  app.get('/',(req,res)=>{
-//      new myModel(
-//         { name: 'Frodo', name: 'Frodon'}
-//     ).save()
+     new myModel(
+        { name: 'Frodo', name: 'Frodon'}
+    ).save()
 
 
-//     myModel.find({},(err, docs)=> {
-//         if (err) return console.error(err);
-//         res.send(docs)
-//       });
+    myModel.find({},(err, docs)=> {
+        if (err) return console.error(err);
+        res.send(docs)
+      });
 
    res.send('hi')
     
