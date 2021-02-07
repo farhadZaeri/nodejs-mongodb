@@ -2,20 +2,20 @@ const express = require('express')
 const bodyparser = require('body-parser')
 require('dotenv').config()
 const app = express()
-const myModel = require("./database")
+// const myModel = require("./database")
 
 app.use(bodyparser.json())
-app.get('/',(req,res)=>{
-     new myModel(
-        { name: 'Frodo', name: 'Frodon'}
-    ).save()
+ app.get('/',(req,res)=>{
+//      new myModel(
+//         { name: 'Frodo', name: 'Frodon'}
+//     ).save()
 
 
-    myModel.find({},(err, docs)=> {
-        if (err) return console.error(err);
-        res.send(docs)
-      });
-   
+//     myModel.find({},(err, docs)=> {
+//         if (err) return console.error(err);
+//         res.send(docs)
+//       });
+   app.send('hi')
     
 })
 
