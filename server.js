@@ -2,7 +2,7 @@ const express = require('express')
 const bodyparser = require('body-parser')
 require('dotenv').config()
 const app = express()
-// const myModel = require("./database")
+ const myModel = require("./database")
 
 app.use(bodyparser.json())
  app.get('/',(req,res)=>{
@@ -16,7 +16,7 @@ app.use(bodyparser.json())
         res.send(docs)
       });
 
-   res.send('hi')
+ 
     
 })
 
