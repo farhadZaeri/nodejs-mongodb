@@ -14,7 +14,7 @@ const schima = mongoose.Schema
 
 const schim = new schima({
     name: { type: String, default: 'ali' },
-    famili: { type: String, default: 'arij'  },
+    family: { type: String, default: 'arij'  },
 })
 
 const model = mongoose.model("modelName",schim)
