@@ -13,8 +13,8 @@ mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 const schima = mongoose.Schema
 
 const schim = new schima({
-    name: { type: String, default: 'ali' },
-    family: { type: String, default: 'arij'  },
+    name: { type: String },
+    family: { type: String},
 })
 
 const model = mongoose.model("modelName",schim)
