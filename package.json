@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "openshift": "nodeshift --expose --dockerImage=registry.access.redhat.com/rhscl/ubi8/nodejs-12",
-    "start": "node server.js"
+    "start": "server.js"
   },
   "author": "",
   "license": "ISC",
