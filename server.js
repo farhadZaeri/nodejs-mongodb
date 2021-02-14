@@ -5,7 +5,9 @@ const app = express()
 
 
 app.use(bodyparser.json())
-
+app.get("/",(req,res)=>{
+    res.send('nodejs+mongoDB is running on openshift container by Farhad zaeri')
+})
 require('./model')(app)
 require('./402')(app)
 
